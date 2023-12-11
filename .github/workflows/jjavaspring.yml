@@ -6,11 +6,11 @@ on:
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  AWS_S3_BUCKET: "james-artifact-storage"
+  AWS_S3_BUCKET: "elasticbeanstalk-us-east-2-182403015120"
   ARTIFACT_NAME: "hello-world.jar"
   AWS_EB_APP_NAME: "james-java-spring"
   AWS_EB_APP_VERSION: "${{ github.run_id }}"
-  AWS_EB_ENVIRONMENT: "james-java-spring"
+  AWS_EB_ENVIRONMENT: "james-java-spring-dev"
   SONAR_IP: "52.23.236.52"
   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
